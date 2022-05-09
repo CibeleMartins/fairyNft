@@ -1,9 +1,13 @@
-
+import { Text } from '@chakra-ui/react';
 
 export default function  Home () {
 
   return (
-    <h1>Olá Mundo</h1>
+
+    <Text color='violet'>
+      Cena 3D
+    </Text>
+   
   )
 
 }
