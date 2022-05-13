@@ -1,61 +1,97 @@
-import { useRef } from 'react'
-import {VStack, HStack, Box, Text, useDisclosure, Flex} from '@chakra-ui/react'
+import {VStack, HStack, Box, Text, Flex, Button} from '@chakra-ui/react'
 import Image from 'next/image'
+import NextLink from 'next/Link';
 import logo from '../public/assets/img/logo.png'
+import breakpoints from '../pages/breakpoints';
 
 export default function Header (props) {
-
-  const {isOpen, onOpen, onClose} = useDisclosure()
-
-  const btnfRef= useRef()
 
   return (
 
     <>
 
-      <VStack w='100%' h='80px' bg='black'>
+      <VStack w='100%' h='110px' bg='black'>
 
         <HStack 
         w= '100%' 
-        h='80px'
+        h='110px'
         justifyContent='space-between'>
 
           <Box 
-          w='100px'
-          h='90px'
-          ml={8}
-          mb={3}>
+          w='130px'
+          h='100px'
+          ml={5}
+          mb={14}>
 
             <Image
             src={logo}
-            alt='logo'>
+            alt='logo'
+            >
             </Image>
 
           </Box>
 
           <Flex
-          w='500px'
-          h='90px'
-          ml={8}
-          alignItems='center'
+          w='400px'
+          h='40px'
+          bg='black'     
           justifyContent= 'space-evenly'
-          fontSize={15} 
+          fontSize={13}
+          color='aliceblue'
           >
             
-            <Text>HOME</Text>
-            <Text>ABOUT</Text>
-            <Text>CONTACT</Text>
+            <NextLink href='/' passHref>
 
-      
+              <Button
+              as='a'
+              aria-label='Home'
+              w='25%'
+              colorScheme='black'
+              variant='ghost'
+              fontSize={14}>
+                HOME
+              </Button>
+
+            </NextLink>
+
+            
+            <NextLink href='/AboutUs' passHref>
+
+              <Button
+              as='a'
+              aria-label='About'
+              w='25%'
+              colorScheme='black'
+              variant='ghost'
+              fontSize={14}>
+                ABOUT
+              </Button>
+
+            </NextLink>
+            
+            
+            <NextLink href='/Contact' passHref>
+
+              <Button
+              as='a'
+              aria-label='Contact'
+              w='25%'
+              colorScheme='black'
+              variant='ghost'
+              fontSize={14}>
+                CONTACT
+              </Button>
+
+            </NextLink>
+            
           </Flex>
-
 
         </HStack>
 
       </VStack>
 
     </>
-    
+
   )
 
 
