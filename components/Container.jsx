@@ -18,6 +18,7 @@ export default function Container (props) {
 
       <Flex 
       w='100%'
+      h='700px'
       alignItems='center'
       justifyContent='space-between'
       >
@@ -27,14 +28,14 @@ export default function Container (props) {
         h='200px'
         fontSize={35}
         ml={10}
-        mb={40}
+        mt={30}
         color='aliceblue'>
         NFT: A new way to enjoy Digital Art
         </Box>
 
         <Box
         w='280px'
-        mb={40}
+        mt={30}
         mr={20}
         >
 

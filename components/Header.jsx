@@ -9,18 +9,29 @@ export default function Header (props) {
 
   return (
 
-      <VStack w='100%' h='110px' bg='black'>
+      <VStack 
+      w='100%' 
+      h='80px' 
+      bg='black'
+      position='fixed'
+      zIndex={999}
+      top={0}
+      left={0}
+      right={0}
+
+      >
 
         <HStack 
         w= '100%' 
-        h='110px'
-        justifyContent='space-between'>
+        h='80px'
+        justifyContent='space-between'
+        >
 
           <Box 
           w='130px'
           h='100px'
           ml={5}
-          mb={14}>
+          mb={5}>
 
             <Image
             src={logo}
@@ -32,8 +43,7 @@ export default function Header (props) {
 
           <Flex
           w='40%'
-          h='40px'
-          bg='black'     
+          h='40px'    
           justifyContent= 'space-evenly'
           color='aliceblue'
           display={['none', 'none', 'flex', 'flex']}
@@ -47,7 +57,8 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}>
+              fontSize={14}
+              mt={2}>
                 HOME
               </Button>
 
@@ -62,14 +73,17 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}>
+              fontSize={14}
+              mt={2}>
                 ABOUT
               </Button>
 
             </NextLink>
             
             
-            <NextLink href='/Contact' passHref>
+            <NextLink 
+            href='/Contact' 
+            passHref>
 
               <Button
               as='a'
@@ -77,7 +91,8 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}>
+              fontSize={14}
+              mt={2}>
                 CONTACT
               </Button>
 
