@@ -1,5 +1,5 @@
 import React from 'react';
-import {Flex, Box} from '@chakra-ui/react';
+import {Flex, Box, Heading} from '@chakra-ui/react';
 import Image from 'next/image';
 import fairyMother from '../public/assets/img/fairyMother.png'
 import nft from '../public/assets/img/nft.png'
@@ -27,6 +27,8 @@ export default function Container (props) {
         w='40%'
         h='200px'
         fontSize={35}
+        fontWeight='light'
+        letterSpacing='4px'
         ml={10}
         mt={30}
         color='aliceblue'>
@@ -58,6 +60,8 @@ export default function Container (props) {
         w='40%'
         h='200px'
         fontSize={30}
+        fontWeight='light'
+        letterSpacing='4px'
         ml={10}
         mt={10}
         color='aliceblue'>
@@ -90,6 +94,8 @@ export default function Container (props) {
         w='40%'
         h='200px'
         fontSize={30}
+        fontWeight='light'
+        letterSpacing='4px'
         ml={10}
         mt={10}
         color='aliceblue'>
@@ -121,6 +127,8 @@ export default function Container (props) {
         w='40%'
         h='200px'
         fontSize={30}
+        fontWeight='light'
+        letterSpacing='4px'
         ml={10}
         mt={10}
         color='aliceblue'>
@@ -170,6 +178,52 @@ export default function Container (props) {
           </Image>
           
         </Box>
+
+      </Flex>
+
+      <Flex 
+      w='100%'
+      alignItems='center'
+      justifyContent='space-between'
+      bg='black'
+      flexDirection='column'>
+
+        
+        <Box
+        mr={600}
+        fontSize={40}
+        color='aliceblue'
+        fontWeight='light'
+        letterSpacing='4px'>
+          About Us
+        </Box>
+        
+
+        <Box
+        w='80%'
+        h='100%'
+        fontSize={30}
+        fontWeight='light'
+        letterSpacing='4px'
+        mt={40}
+        color='aliceblue'
+        textAlign='center'>
+        The First PVP game for the NFT Universe.
+        We are platform (PC+ Mobile) PvP fairies game where holders of different NFT collections can play with each other to both and earn rewards through our play mechanics.
+        </Box>
+
+        <Box
+        w='80%'
+        h='100%'
+        fontSize={30}
+        mt={40}
+        color='aliceblue'
+        textAlign='center'
+        fontWeight='light'
+        letterSpacing='4px'>
+        We are in the launch phase, soon all fairies will be available for purchase.
+        </Box>
+
 
       </Flex>
 

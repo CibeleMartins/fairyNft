@@ -7,6 +7,7 @@ import breakpoints from '../pages/breakpoints';
 
 export default function Header (props) {
 
+
   return (
 
       <VStack 
@@ -17,9 +18,7 @@ export default function Header (props) {
       zIndex={999}
       top={0}
       left={0}
-      right={0}
-
-      >
+      right={0}>
 
         <HStack 
         w= '100%' 
@@ -58,6 +57,8 @@ export default function Header (props) {
               colorScheme='black'
               variant='ghost'
               fontSize={14}
+              fontWeight='light'
+              letterSpacing='4px'
               mt={2}>
                 HOME
               </Button>
@@ -74,6 +75,8 @@ export default function Header (props) {
               colorScheme='black'
               variant='ghost'
               fontSize={14}
+              fontWeight='light'
+              letterSpacing='4px'
               mt={2}>
                 ABOUT
               </Button>
@@ -92,6 +95,8 @@ export default function Header (props) {
               colorScheme='black'
               variant='ghost'
               fontSize={14}
+              fontWeight='light'
+              letterSpacing='4px'
               mt={2}>
                 CONTACT
               </Button>
@@ -102,10 +107,11 @@ export default function Header (props) {
 
           <Box boxSize={65}
           display={['flex', 'flex', 'none', 'none']}
-          mr={10}>
+          mr={10}
+          alignItems='center'>
             <IconButton
             aria-label='Open Menu'
-            size='md'
+            size='sm'
             icon={<HamburgerIcon/>}
             colorScheme='black'
             >
