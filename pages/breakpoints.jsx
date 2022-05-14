@@ -1,15 +1,15 @@
 
-// import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
 
-// const breakpoints = { 
-//   sm : '400px' , 
-//   md : '760px' , 
-//   lg : '800px' , 
-//   xl : '1200' , 
-// }
+const breakpoints = { 
+  sm: '10em', 
+  md: '20em', 
+  lg: '30em', 
+  xl: '40em', 
+}
 
-// export default breakpoints;
+export default breakpoints;
 
 // Veja como interpretar essa sintaxe:
 

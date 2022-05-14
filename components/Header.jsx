@@ -1,14 +1,13 @@
-import {VStack, HStack, Box, Text, Flex, Button} from '@chakra-ui/react'
-import Image from 'next/image'
+import {VStack, HStack, Box, Flex, Button, IconButton} from '@chakra-ui/react';
+import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
+import Image from 'next/image';
 import NextLink from 'next/Link';
-import logo from '../public/assets/img/logo.png'
+import logo from '../public/assets/img/logo.png';
 import breakpoints from '../pages/breakpoints';
 
 export default function Header (props) {
 
   return (
-
-    <>
 
       <VStack w='100%' h='110px' bg='black'>
 
@@ -32,12 +31,12 @@ export default function Header (props) {
           </Box>
 
           <Flex
-          w='400px'
+          w='40%'
           h='40px'
           bg='black'     
           justifyContent= 'space-evenly'
-          fontSize={13}
           color='aliceblue'
+          display={['none', 'none', 'flex', 'flex']}
           >
             
             <NextLink href='/' passHref>
@@ -86,11 +85,21 @@ export default function Header (props) {
             
           </Flex>
 
+          <Box boxSize={65}
+          display={['flex', 'flex', 'none', 'none']}
+          mr={10}>
+            <IconButton
+            aria-label='Open Menu'
+            size='md'
+            icon={<HamburgerIcon/>}
+            colorScheme='black'
+            >
+            </IconButton>
+          </Box>
+
         </HStack>
 
       </VStack>
-
-    </>
 
   )
 
