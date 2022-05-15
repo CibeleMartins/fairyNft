@@ -29,7 +29,7 @@ export default function Header (props) {
           <Box 
           w='130px'
           h='100px'
-          ml={5}
+          ml={10}
           mb={5}>
 
             <Image
@@ -41,7 +41,7 @@ export default function Header (props) {
           </Box>
 
           <Flex
-          w='40%'
+          w='35%'
           h='40px'    
           justifyContent= 'space-evenly'
           color='aliceblue'
@@ -56,10 +56,11 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}
+              fontSize={12}
               fontWeight='light'
               letterSpacing='4px'
-              mt={2}>
+              mt={2}
+              mr={5}>
                 HOME
               </Button>
 
@@ -74,10 +75,11 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}
+              fontSize={12}
               fontWeight='light'
               letterSpacing='4px'
-              mt={2}>
+              mt={2}
+              mr={5}>
                 ABOUT
               </Button>
 
@@ -94,10 +96,11 @@ export default function Header (props) {
               w='25%'
               colorScheme='black'
               variant='ghost'
-              fontSize={14}
+              fontSize={12}
               fontWeight='light'
               letterSpacing='4px'
-              mt={2}>
+              mt={2}
+              mr={10}>
                 CONTACT
               </Button>
 

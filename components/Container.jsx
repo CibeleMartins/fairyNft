@@ -1,7 +1,7 @@
 import React from 'react';
 import {Flex, Box, Heading} from '@chakra-ui/react';
 import Image from 'next/image';
-import fairyMother from '../public/assets/img/fairyMother.png'
+import fairyFlag from '../public/assets/img/fairyFlag.png'
 import nft from '../public/assets/img/nft.png'
 import fairyFuture from '../public/assets/img/futureFairy.png';
 import warrior from '../public/assets/img/warriorFairy.png';
@@ -29,20 +29,20 @@ export default function Container (props) {
         fontSize={35}
         fontWeight='light'
         letterSpacing='4px'
-        ml={10}
         mt={30}
+        ml={12}
         color='aliceblue'>
         NFT: A new way to enjoy Digital Art
         </Box>
 
         <Box
-        w='280px'
-        mt={30}
-        mr={20}
+        w='20%'
+        mt={30} 
+        mr={24}
         >
 
           <Image
-          src={fairyMother}>
+          src={fairyFlag}>
           
           </Image>
           
@@ -62,17 +62,17 @@ export default function Container (props) {
         fontSize={30}
         fontWeight='light'
         letterSpacing='4px'
-        ml={10}
+        ml={12}
         mt={10}
         color='aliceblue'>
         Non-fungible, more or less means that it’s unique 
         </Box>
 
         <Box
-        w='350px'
+        w='35%'
         mt={20}
         mb={20}
-        mr={10}
+        mr={12}
         >
 
           <Image
@@ -96,17 +96,17 @@ export default function Container (props) {
         fontSize={30}
         fontWeight='light'
         letterSpacing='4px'
-        ml={10}
+        ml={12}
         mt={10}
         color='aliceblue'>
           It's generaand can’t be replaced with something else. 
         </Box>
 
         <Box
-        w='350px'
+        w='35%'
         mt={20}
         mb={20}
-        mr={10}
+        mr={8}
         >
 
           <Image
@@ -129,16 +129,17 @@ export default function Container (props) {
         fontSize={30}
         fontWeight='light'
         letterSpacing='4px'
-        ml={10}
+        ml={12}
         mt={10}
         color='aliceblue'>
         Can be built like croptocurrencies, but not traded with each other.
         </Box>
 
         <Box
-        w='420px'
+        w='35%'
         mt={20}
         mb={20}
+        mr={8}
         >
 
           <Image
@@ -160,17 +161,19 @@ export default function Container (props) {
         w='40%'
         h='200px'
         fontSize={60}
-        ml={10}
+        fontWeight='light'
+        letterSpacing='4px'
+        ml={12}
         mt={40}
         color='aliceblue'>
         FAIRIES NFT
         </Box>
 
         <Box
-        w='420px'
+        w='35%'
         mt={20}
         mb={20}
-        mr={10}
+        mr={16}
         >
 
           <Image
@@ -184,28 +187,30 @@ export default function Container (props) {
       <Flex 
       w='100%'
       alignItems='center'
-      justifyContent='space-between'
       bg='black'
       flexDirection='column'>
 
-        
-        <Box
+     
+        <Heading
         mr={600}
-        fontSize={40}
+        mt={40}
+        fontSize={35}
         color='aliceblue'
         fontWeight='light'
-        letterSpacing='4px'>
+        letterSpacing='4px'
+        borderBottom='1px solid'
+        padding={5}>
           About Us
-        </Box>
+        </Heading>
+     
         
 
         <Box
         w='80%'
-        h='100%'
         fontSize={30}
         fontWeight='light'
         letterSpacing='4px'
-        mt={40}
+        mt={20}
         color='aliceblue'
         textAlign='center'>
         The First PVP game for the NFT Universe.
@@ -214,9 +219,9 @@ export default function Container (props) {
 
         <Box
         w='80%'
-        h='100%'
+        h='40%'
         fontSize={30}
-        mt={40}
+        mt={20}
         color='aliceblue'
         textAlign='center'
         fontWeight='light'
