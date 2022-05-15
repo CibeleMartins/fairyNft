@@ -12,7 +12,8 @@ export default function AppLayout () {
           
           <Flex 
           w='100%'
-          bg='black'>
+          bg='black'
+          >
           
             <Body>
             </Body>

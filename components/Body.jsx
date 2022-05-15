@@ -8,7 +8,8 @@ export default function Body (props) {
     <>
       <VStack 
       h='100%'
-      bg='black'>
+      bg='black'
+      >
 
         <Container>
           

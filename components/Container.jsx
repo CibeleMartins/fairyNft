@@ -134,10 +134,10 @@ export default function Container (props) {
         </Box>
 
         <Box
-        w='35%'
+        w='40%'
         mt={20}
         mb={20}
-        mr={8}
+        
         >
 
           <Image
@@ -168,10 +168,10 @@ export default function Container (props) {
         </Box>
 
         <Box
-        w='35%'
+        w='40%'
         mt={30}
         mb={20}
-        mr={16}
+        mr={10}
         >
 
           <Image
@@ -190,6 +190,7 @@ export default function Container (props) {
 
      
         <Heading
+        id='#about-us'
         mr={600}
         mt={40}
         fontSize={35}
