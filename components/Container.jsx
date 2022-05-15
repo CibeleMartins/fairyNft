@@ -1,11 +1,13 @@
 import React from 'react';
-import {Flex, Box, Heading} from '@chakra-ui/react';
+import {Flex, Box, Heading, Slide} from '@chakra-ui/react';
+import Slider from './Slider/Slider';
+
 import Image from 'next/image';
+
 import fairyFlag from '../public/assets/img/fairyFlag.png'
 import nft from '../public/assets/img/nft.png'
 import fairyFuture from '../public/assets/img/futureFairy.png';
-import warrior from '../public/assets/img/warriorFairy.png';
-import Carousel from './Carousel';
+
 
 export default function Container (props) {
 
@@ -167,8 +169,6 @@ export default function Container (props) {
         FAIRIES NFT
         </Box>
 
-        <Carousel></Carousel>
-
       </Flex>
 
       <Flex 
@@ -221,7 +221,8 @@ export default function Container (props) {
       </Flex>
 
     </Flex>
-  
+
+    
   )
 
 

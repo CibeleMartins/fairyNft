@@ -1,13 +1,12 @@
-import { Text } from '@chakra-ui/react';
+import { Slide, Text } from '@chakra-ui/react';
+
+import Slider from '../components/Slider/Slider'
 
 export default function  Home () {
 
   return (
 
-    <Text color='violet'>
-      Cena 3D
-    </Text>
-   
+      <Slider>SLIDER</Slider>
   )
 
 }

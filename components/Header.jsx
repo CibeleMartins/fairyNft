@@ -136,7 +136,7 @@ export default function Header (props) {
           w='150px'
           bg='#8A2BE2'
           zIndex={20}
-          h='300px'
+          h='250px'
           position='fixed'
           top='0'
           right='7'
@@ -151,7 +151,7 @@ export default function Header (props) {
 
             <Flex justify='flex-end'>
               <IconButton
-              mt={10}
+              mt={7}
               mr={2}
               aria-label='Close Menu'
               size='xs'
@@ -171,7 +171,7 @@ export default function Header (props) {
                 <Button
                 as='a'
                 aria-label='Home'
-                w='25%'
+                w='40%'
                 colorScheme='black'
                 variant='ghost'
                 fontSize={12}
