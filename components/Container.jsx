@@ -5,7 +5,7 @@ import fairyFlag from '../public/assets/img/fairyFlag.png'
 import nft from '../public/assets/img/nft.png'
 import fairyFuture from '../public/assets/img/futureFairy.png';
 import warrior from '../public/assets/img/warriorFairy.png';
-
+import Carousel from './Carousel';
 
 export default function Container (props) {
 
@@ -167,18 +167,7 @@ export default function Container (props) {
         FAIRIES NFT
         </Box>
 
-        <Box
-        w='40%'
-        mt={30}
-        mb={20}
-        mr={10}
-        >
-
-          <Image
-          src={warrior}>
-          </Image>
-          
-        </Box>
+        <Carousel></Carousel>
 
       </Flex>
 
