@@ -63,14 +63,12 @@ export default function Container (props) {
         fontWeight='light'
         letterSpacing='4px'
         ml={12}
-        mt={10}
         color='aliceblue'>
         Non-fungible, more or less means that it’s unique 
         </Box>
 
         <Box
         w='35%'
-        mt={20}
         mb={20}
         mr={12}
         >
@@ -160,18 +158,18 @@ export default function Container (props) {
         <Box
         w='40%'
         h='200px'
-        fontSize={60}
+        fontSize={55}
         fontWeight='light'
         letterSpacing='4px'
         ml={12}
-        mt={40}
+        mt={30}
         color='aliceblue'>
         FAIRIES NFT
         </Box>
 
         <Box
         w='35%'
-        mt={20}
+        mt={30}
         mb={20}
         mr={16}
         >
