@@ -1,0 +1,11 @@
+span.swiper-pagination-bullet {
+  background-color: red;
+  height: 4px;
+  border-radius: 10px;
+  width: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+  transform: scale(1.2);
+}

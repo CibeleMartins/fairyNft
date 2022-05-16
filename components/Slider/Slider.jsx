@@ -149,7 +149,6 @@ export default function Slider () {
                 />
             </SwiperSlide>
 
-
           </Swiper>
     
         </Box>
