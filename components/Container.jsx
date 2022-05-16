@@ -1,7 +1,7 @@
 import React from 'react';
 import {Flex, Box, Heading, Slide} from '@chakra-ui/react';
 import Slider from './Slider/Slider';
-import styles from './Container.module.css'
+// import styles from './Container.module.css'
 
 import Image from 'next/image';
 
@@ -15,7 +15,10 @@ export default function Container (props) {
 return (
 
   
-    <div className={styles.main}>
+    <Flex 
+    display='flex'
+    flexDir= 'column'
+    justifyContent= 'space-between'>
 
       <Flex 
       w='100%'
@@ -150,7 +153,12 @@ return (
       </Flex>
 
       
-      <div className={styles.div_slide}>
+      <Flex
+       w='100%'
+       display='flex'
+       alignItems= 'center'
+       justifyContent= 'space-between'
+       bg= 'black'>
 
         <Box
         w='40%'
@@ -164,13 +172,11 @@ return (
         FAIRIES NFT
         </Box>
 
-        <Slider>
-          
-        </Slider>
+        <Slider></Slider>
 
       
 
-      </div>
+      </Flex>
 
       <Flex 
       w='100%'
@@ -220,7 +226,7 @@ return (
       </Flex>
 
 
-    </div>
+    </Flex>
 
     
   )
