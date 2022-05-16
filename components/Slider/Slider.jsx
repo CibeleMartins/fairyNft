@@ -1,14 +1,12 @@
-import Flex from '@chakra-ui/react';
+import Box from '@chakra-ui/react';
 import Slide from './Slide'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import styles from './slider.module.css';
-import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import fairyMother from '../../public/assets/img/fairyMother.png';
 import iceFairy from '../../public/assets/img/iceFairy.png';
@@ -27,13 +25,16 @@ import windFairy from '../../public/assets/img/windFairy.png';
 import youthFairy from '../../public/assets/img/youthFairy.png';
 import diffrentFairy from '../../public/assets/img/diffrentFairy.png';
 
-export default function Slider (props) {
+export default function Slider () {
+
   return (
 
         // main element
-        <Flex 
+        <Box
         w='50%'
-        mr='15px'>
+        mr={12}
+        mt={10}
+        >
           
 
           {/* swiper main element  */}
@@ -50,108 +51,108 @@ export default function Slider (props) {
             {/* slide 1 */}
             <SwiperSlide>
               <Slide
-              src={diffrentFairy}/>
+              image={diffrentFairy}/>
             </SwiperSlide>
 
             {/* slide 2 */}
             <SwiperSlide>
                 <Slide
-                  src={inspectorFairy}
+                  image={inspectorFairy}
                 />
             </SwiperSlide>
 
             {/* slide 3 */}
             <SwiperSlide>
                 <Slide
-                  src={futureFairy}
+                  image={futureFairy}
                 />
             </SwiperSlide>
 
             {/* slide 4 */}
             <SwiperSlide>
                 <Slide
-                  src={bloodlettingFairy}
+                  image={bloodlettingFairy}
                 />
             </SwiperSlide>
 
             {/* slide 5 */}
             <SwiperSlide>
                 <Slide
-                  src={futureFairy}
+                  image={futureFairy}
                 />
             </SwiperSlide>
 
             {/* slide 6 */}
             <SwiperSlide>
                 <Slide
-                  src={diffrentFairy}
+                  image={diffrentFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
                 <Slide
-                 src={inspectorFairy}
+                 image={inspectorFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
                 <Slide
-                  src={leafFairy}
+                  image={leafFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
                 <Slide
-                  src={loveFairyFreyja}
+                  image={loveFairyFreyja}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
                 <Slide
-                  src={thoughtFairy}
+                  image={thoughtFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
                 <Slide
-                src={forestFairy}
+                image={forestFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
             <Slide
-                src={blueRayFairy}
+                image={blueRayFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
             <Slide
-                src={tinkerBell}
+                image={tinkerBell}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
             <Slide
-                src={warriorFairy}
+                image={warriorFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
             <Slide
-                src={windFairy}
+                image={windFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
             <Slide
-                src={youthFairy}
+                image={youthFairy}
                 />
             </SwiperSlide>
 
 
           </Swiper>
     
-        </Flex>
+        </Box>
     
       )
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {VStack, Box, Text} from '@chakra-ui/react'
+import {Box} from '@chakra-ui/react'
 import Container from './Container'
 
 // import styles from './Body.module.css'
@@ -8,7 +8,7 @@ export default function Body (props) {
 
   return (
     <>
-      <VStack
+      <Box
         w='100%'
         h= '100%'
         bg='black'>
@@ -17,7 +17,7 @@ export default function Body (props) {
           
         </Container>
 
-      </VStack>
+      </Box>
     </>
   )
 

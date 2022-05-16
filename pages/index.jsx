@@ -1,6 +1,4 @@
-import { Slide, Text } from '@chakra-ui/react';
-
-import Slider from '../components/Slider/Slider'
+import { Text } from '@chakra-ui/react';
 
 export default function  Home () {
 

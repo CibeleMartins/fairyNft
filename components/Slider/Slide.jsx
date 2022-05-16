@@ -3,23 +3,24 @@ import Image, {StaticImageData} from 'next/image';
 
 
 
-export default function Slide ({image}) {
+export default function Slide ({image, w}) {
 
+  return (
   <Box
-  w={{base: '178px', lg: '278px'}}
-  h={{base: '272px', lg: '426px'}}
+  h='400px'
   position="relative"
+  display='flex'
+  ml={20}
   >
 
   <Box
-    borderRadius="30px"
-    w="100%"
-    h="100%"
-    objectFit="cover"
-    position="relative"
+  display='flex'
+  alignItems='center'
+  w='280px'
   >
-    <Image src={image}/>
+    <Image w={w} src={image}/>
   </Box>
 </Box>
+)
 
 }
