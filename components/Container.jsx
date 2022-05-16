@@ -1,5 +1,5 @@
 import React from 'react';
-import {Flex, Box, Heading, Slide} from '@chakra-ui/react';
+import {Flex, Box, Heading} from '@chakra-ui/react';
 import Slider from './Slider/Slider';
 // import styles from './Container.module.css'
 

@@ -1,3 +1,5 @@
+import Flex from '@chakra-ui/react';
+import Slide from './Slide'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -5,6 +7,7 @@ import styles from './slider.module.css';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+
 
 
 import fairyMother from '../../public/assets/img/fairyMother.png';
@@ -28,7 +31,9 @@ export default function Slider (props) {
   return (
 
         // main element
-        <div className={styles.slide}>
+        <Flex 
+        w='50%'
+        mr='15px'>
           
 
           {/* swiper main element  */}
@@ -44,101 +49,101 @@ export default function Slider (props) {
             
             {/* slide 1 */}
             <SwiperSlide>
-              <Image
+              <Slide
               src={diffrentFairy}/>
             </SwiperSlide>
 
             {/* slide 2 */}
             <SwiperSlide>
-                <Image
+                <Slide
                   src={inspectorFairy}
                 />
             </SwiperSlide>
 
             {/* slide 3 */}
             <SwiperSlide>
-                <Image
+                <Slide
                   src={futureFairy}
                 />
             </SwiperSlide>
 
             {/* slide 4 */}
             <SwiperSlide>
-                <Image
+                <Slide
                   src={bloodlettingFairy}
                 />
             </SwiperSlide>
 
             {/* slide 5 */}
             <SwiperSlide>
-                <Image
+                <Slide
                   src={futureFairy}
                 />
             </SwiperSlide>
 
             {/* slide 6 */}
             <SwiperSlide>
-                <Image
+                <Slide
                   src={diffrentFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image
+                <Slide
                  src={inspectorFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image
+                <Slide
                   src={leafFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image
+                <Slide
                   src={loveFairyFreyja}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image
+                <Slide
                   src={thoughtFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image
+                <Slide
                 src={forestFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-            <Image
+            <Slide
                 src={blueRayFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-            <Image
+            <Slide
                 src={tinkerBell}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-            <Image
+            <Slide
                 src={warriorFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-            <Image
+            <Slide
                 src={windFairy}
                 />
             </SwiperSlide>
 
             <SwiperSlide>
-            <Image
+            <Slide
                 src={youthFairy}
                 />
             </SwiperSlide>
@@ -146,7 +151,7 @@ export default function Slider (props) {
 
           </Swiper>
     
-        </div>
+        </Flex>
     
       )
     }
