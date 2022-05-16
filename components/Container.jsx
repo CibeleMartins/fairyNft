@@ -71,7 +71,7 @@ return (
         <Box
         w='35%'
         mb={20}
-        mr={12}
+        mr={8}
         >
 
           <Image
@@ -155,16 +155,18 @@ return (
         <Box
         w='40%'
         h='200px'
-        fontSize={55}
+        fontSize={80}
         fontWeight='light'
         letterSpacing='4px'
         ml={12}
-        mt={30}
+        mt={90}
         color='aliceblue'>
         FAIRIES NFT
         </Box>
 
-        <Slider></Slider>
+        <Slider>
+          
+        </Slider>
 
       
 
