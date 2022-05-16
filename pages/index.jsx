@@ -6,7 +6,7 @@ export default function  Home () {
 
   return (
 
-      <Slider>SLIDER</Slider>
+   <Text>CENA3DDDDDDDDDDDDDDDDD</Text>
   )
 
 }

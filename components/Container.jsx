@@ -1,6 +1,7 @@
 import React from 'react';
 import {Flex, Box, Heading, Slide} from '@chakra-ui/react';
 import Slider from './Slider/Slider';
+import styles from './Container.module.css'
 
 import Image from 'next/image';
 
@@ -11,12 +12,10 @@ import fairyFuture from '../public/assets/img/futureFairy.png';
 
 export default function Container (props) {
 
-  return (
+return (
 
   
-   <Flex
-   flexDirection='column'
-   justifyContent='space-between'>
+    <div className={styles.main}>
 
       <Flex 
       w='100%'
@@ -38,7 +37,7 @@ export default function Container (props) {
         </Box>
 
         <Box
-        w='20%'
+        w='200px'
         mt={30} 
         mr={24}
         >
@@ -151,11 +150,7 @@ export default function Container (props) {
       </Flex>
 
       
-      <Flex 
-      w='100%'
-      alignItems='center'
-      justifyContent='space-between'
-      bg='black'>
+      <div className={styles.div_slide}>
 
         <Box
         w='40%'
@@ -169,7 +164,11 @@ export default function Container (props) {
         FAIRIES NFT
         </Box>
 
-      </Flex>
+        <Slider></Slider>
+
+      
+
+      </div>
 
       <Flex 
       w='100%'
@@ -177,7 +176,6 @@ export default function Container (props) {
       bg='black'
       flexDirection='column'>
 
-     
         <Heading
         id='#about-us'
         mr={600}
@@ -190,7 +188,6 @@ export default function Container (props) {
         padding={5}>
           About Us
         </Heading>
-     
         
 
         <Box
@@ -216,11 +213,12 @@ export default function Container (props) {
         letterSpacing='4px'>
         We are in the launch phase, soon all fairies will be available for purchase.
         </Box>
-
+     
 
       </Flex>
 
-    </Flex>
+
+    </div>
 
     
   )

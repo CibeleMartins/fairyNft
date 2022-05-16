@@ -10,15 +10,9 @@ export default function AppLayout () {
           <>
           <Header/>
           
-          <Flex 
-          w='100%'
-          bg='black'
-          >
-          
             <Body>
+              
             </Body>
-
-          </Flex>
 
           <Footer/>
 

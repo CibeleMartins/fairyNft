@@ -1,12 +1,11 @@
-
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from './slider.module.css';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar } from 'swiper';
+
 
 import fairyMother from '../../public/assets/img/fairyMother.png';
 import iceFairy from '../../public/assets/img/iceFairy.png';
@@ -37,7 +36,7 @@ export default function Slider (props) {
             className={styles.mySwiper}
             modules={[Navigation, Pagination, Scrollbar]}
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
@@ -46,20 +45,20 @@ export default function Slider (props) {
             {/* slide 1 */}
             <SwiperSlide>
               <Image
-              src={fairyMother}/>
+              src={diffrentFairy}/>
             </SwiperSlide>
 
             {/* slide 2 */}
             <SwiperSlide>
                 <Image
-                  src={iceFairy}
+                  src={inspectorFairy}
                 />
             </SwiperSlide>
 
             {/* slide 3 */}
             <SwiperSlide>
                 <Image
-                  src={elfFairy}
+                  src={futureFairy}
                 />
             </SwiperSlide>
 
