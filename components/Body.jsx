@@ -1,24 +1,21 @@
 import React from 'react'
-import {Box} from '@chakra-ui/react'
-import Container from './Container'
-
-// import styles from './Body.module.css'
+import {Flex} from '@chakra-ui/react'
+import Divisor from './Divisor'
 
 export default function Body (props) {
 
   return (
     <>
-      <Box
+      <Flex
         w='100%'
         h= '100%'
         bg='black'>
 
-        <Container>
-          
-        </Container>
+        <Divisor/>
 
-      </Box>
+      </Flex>
     </>
+ 
   )
 
 

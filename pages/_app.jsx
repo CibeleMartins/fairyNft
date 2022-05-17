@@ -10,10 +10,8 @@ export default function MyApp({ Component, pageProps }) {
   return (
 
 
-    <ChakraProvider>
-       <Header/>
+    <ChakraProvider resetCSS>
       <Component {...pageProps}/>
-      <Footer/>
     </ChakraProvider>
          
    

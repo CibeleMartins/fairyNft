@@ -10,7 +10,7 @@ import nft from '../public/assets/img/nft.png'
 import fairyFuture from '../public/assets/img/futureFairy.png';
 
 
-export default function Container (props) {
+export default function Divisor () {
 
 return (
 
@@ -172,7 +172,11 @@ return (
         FAIRIES NFT
         </Box>
 
+        <Slider/>
+
       </Flex>
+
+     
 
       <Flex 
       w='100%'
