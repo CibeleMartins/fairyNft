@@ -31,7 +31,8 @@ export default function Slider ({image}) {
 
         // main element
         <Flex
-        w='500px'>
+        h='500px'
+        mr={20}>
 
           {/* swiper main element  */}
           <Swiper
