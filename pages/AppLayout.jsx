@@ -8,13 +8,10 @@ export default function AppLayout () {
   return (
 
           <>
-          <Header/>
           
             <Body>
               
             </Body>
-
-          <Footer/>
 
           </>
 

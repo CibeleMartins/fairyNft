@@ -172,10 +172,6 @@ return (
         FAIRIES NFT
         </Box>
 
-        <Slider></Slider>
-
-      
-
       </Flex>
 
       <Flex 
@@ -227,7 +223,7 @@ return (
 
 
     </Flex>
-
+    
     
   )
 

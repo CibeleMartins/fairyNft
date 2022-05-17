@@ -30,12 +30,7 @@ export default function Slider () {
   return (
 
         // main element
-        <Box
-        w='50%'
-        mr={12}
-        mt={10}
-        >
-          
+        <>
 
           {/* swiper main element  */}
           <Swiper
@@ -151,7 +146,7 @@ export default function Slider () {
 
           </Swiper>
     
-        </Box>
+        </>
     
       )
     }
